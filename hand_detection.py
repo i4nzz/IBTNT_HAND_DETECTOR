@@ -5,8 +5,11 @@ import math
 import tensorflow as tf
 
 # Caminhos
-tflite_model_path = "C:\\Users\\Gustavo\\Documents\\IBTNT_HAND_DETECTOR-main\\converted_tflite\\model_unquant.tflite" # Caminho para o modelo treinado usando o tensorflow lite(Teachable Machine)
-labels_path = "C:\\Users\\Gustavo\\Documents\\IBTNT_HAND_DETECTOR-main\\converted_tflite\\labels.txt" # caminho para os rotolus do modelo treinado
+# Caminho para o modelo treinado usando o tensorflow lite(Teachable Machine)
+tflite_model_path = "C:\\_source\\IBTNT_HAND_DETECTOR\\converted_tflite\\model_unquant.tflite"
+
+# caminho para os rotolus do modelo treinado
+labels_path = "C:\\_source\\IBTNT_HAND_DETECTOR\\converted_tflite\\labels.txt" 
 
 # Carregar modelo TFLite
 interpreter = tf.lite.Interpreter(model_path=tflite_model_path)
