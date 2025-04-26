@@ -10,7 +10,8 @@ offset = 20
 imgSize = 300
 counter = 0
 
-folder = "C:\\Users\\Gustavo\\Documents\\IBTNT_HAND_DETECTOR-main\\J" #INSIRA A SUA PASTA ONDE FICARA OS SEUS DADOS COLETADOS
+# INSIRA A SUA PASTA ONDE FICARA OS SEUS DADOS COLETADOS
+folder = "" 
 
 
 
