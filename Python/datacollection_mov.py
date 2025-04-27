@@ -6,7 +6,6 @@ import time
 import os
 
 
-
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
 offset = 20
