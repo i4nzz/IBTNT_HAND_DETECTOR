@@ -6,17 +6,10 @@ import tensorflow as tf
 
 # Caminhos
 # Caminho para o modelo treinado usando o tensorflow lite(Teachable Machine)
-<<<<<<< HEAD
-tflite_model_path = ""
+tflite_model_path = "C:\\_source\\IBTNT_HAND_DETECTOR\\Treined_Model\\model_unquant.tflite"
 
 # caminho para os rotolus do modelo treinado
-labels_path = "" 
-=======
-tflite_model_path = "C:\\Users\\Gustavo\\Documents\\IBTNT_HAND_DETECTOR\\Treined_Model\\model_unquant.tflite"
-
-# caminho para os rotolus do modelo treinado
-labels_path = "C:\\Users\\Gustavo\\Documents\\IBTNT_HAND_DETECTOR\\Treined_Model\\labels.txt" 
->>>>>>> 3565a163005d98bd04f35c135c3cb7fc7e183201
+labels_path = "C:\\_source\\IBTNT_HAND_DETECTOR\\Treined_Model\\labels.txt" 
 
 
 interpreter = tf.lite.Interpreter(model_path=tflite_model_path)
