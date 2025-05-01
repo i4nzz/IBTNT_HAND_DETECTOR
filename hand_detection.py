@@ -6,10 +6,10 @@ import tensorflow as tf
 
 # Caminhos
 # Caminho para o modelo treinado usando o tensorflow lite(Teachable Machine)
-tflite_model_path = "" # mudar para o caminho tftlite
+tflite_model_path = "C:\\_source\\IBTNT_HAND_DETECTOR\\Treined_Model\\model_unquant.tflite" # mudar para o caminho tftlite
 
 # caminho para os rotolus do modelo treinado
-labels_path = "" # mudar para o arquivo txt 
+labels_path = "C:\\_source\\IBTNT_HAND_DETECTOR\\Treined_Model\\labels.txt" # mudar para o arquivo txt 
 
 
 interpreter = tf.lite.Interpreter(model_path=tflite_model_path)
@@ -65,7 +65,7 @@ while True:
         prediction = interpreter.get_tensor(output_details[0]['index'])[0]
         index = np.argmax(prediction)
 
-        # Exibe resultado
+        # Exibe resultado 
         cv2.rectangle(imgOutput, (x - offset, y - offset - 70), (x - offset + 400, y - offset + 10), (0, 255, 0), cv2.FILLED)
         cv2.putText(imgOutput, labels[index], (x, y - 30), cv2.FONT_HERSHEY_COMPLEX, 2, (0, 0, 0), 2)
         cv2.rectangle(imgOutput, (x - offset, y - offset), (x + w + offset, y + h + offset), (0, 255, 0), 4)

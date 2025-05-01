@@ -11,7 +11,7 @@ imgSize = 300
 counter = 0
 
 # INSIRA A SUA PASTA ONDE FICARA OS SEUS DADOS COLETADOS
-folder = "" 
+folder = "C:\\_source\\IBTNT_HAND_DETECTOR\\Data\\I" 
 
 
 

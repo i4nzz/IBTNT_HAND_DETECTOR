@@ -12,7 +12,7 @@ offset = 20
 imgSize = 300
 
 # PASTA DOS DADOS COLETADOS
-folder = ""  
+folder = "C:\\_source\\IBTNT_HAND_DETECTOR\\Data\\teste" 
 if not os.path.exists(folder):
     os.makedirs(folder)
 
